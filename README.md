@@ -37,6 +37,7 @@ Version | Requests | Transferred | Comments
 [00-original](00-original/index.html) | 62 | 8,042KB | baseline
 [01-compressed-jpgs](01-compressed-jpgs/index.html) | 62 | 6,582KB ✅ *(-1,460KB)* | Images account for the most bytes sent over the wire.
 [02-html-updated](02-html-updated/index.html) | 60 ✅ *(-2)* | 6,561KB ✅ *(-21KB)* | Saved two requests. Most of the byte saving here was by replacing the GIFs with PNGs.
+[03-no-lazy-loading](03-no-lazy-loading/index.html) | 60 | 6,561KB | For real-world testing, without lazy-loading.
 
 All results:
 - are tested on my local machine

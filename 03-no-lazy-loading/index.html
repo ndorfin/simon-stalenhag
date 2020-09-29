@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>www.simonstalenhag.se</title>
+  <style>
+/* Element defaults */
+html {
+  background-color: #efefef;
+  background-image: url('img/bg_wallpaper.png');
+  color: #666;
+  font-family: Helvetica, "Trebuchet MS", Verdana, Arial;
+  font-size: 100%;
+}
+
+body {
+  max-width: 64rem;
+  margin: 0 auto;
+  border-style: solid;
+  border-color: #e290a7;
+  border-width: 0 0.125rem;
+  background-color: #efefef;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  body {
+    padding: 2rem;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+a:link,
+a:visited {
+  color: #7d7d7d;
+}
+
+a:hover {
+  color: #e290a7;
+}
+
+a:active {
+  color: #f93;
+}
+
+nav > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Site header */
+body > header > h1 {
+  position: relative;
+  height: 0;
+  padding-top: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: calc(582px + 64px + 4px)) {
+  body > header > h1 {
+    padding-top: 0;
+    width: 582px;
+    height: 116px;
+  }
+}
+
+body > header > h1 > a {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  max-width: 582px;
+  max-height: 116px;
+  background-image: url('img/logo_the_steel_meadow.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* 
+    Hide the text for the Logo by using a negative indent,
+    and then hiding any overflow.
+  */
+  text-indent: -999rem;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+body > header > p {
+  margin-top: 1em;
+  font-size: 1.125rem;
+  font-style: italic;
+  color: #a6a6a6;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Navigation */
+body > nav {
+  font-size: 1.125rem;
+}
+
+body > nav .active span {
+  font-weight: 700;
+}
+
+body > nav small {
+  font-size: inherit;
+}
+
+#nav_contextual li a,
+body > nav a span {
+  text-transform: uppercase;
+}
+
+#nav_site {
+  margin-top: 2rem;
+}
+
+#nav_site h2 {
+  color: #a6a6a6;
+  font-size: 1.125rem;
+  font-weight: normal;
+}
+
+#nav_site h2::after {
+  content: ":";
+}
+
+/* Article */
+article {
+  margin-top: 2rem;
+}
+
+/* Footer */
+body > footer {
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* Utility classes */
+.a11y {
+  /* 
+    Hide the element from sighted users,
+    but retain its screen-reader and search engine support
+  */
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* Component classes */
+.gallery {
+  /* 
+    A list element such as a `<ul>` or `<ol>` that contains
+    many images, one per list-item
+  */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.gallery li + li {
+  margin-top: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .gallery li + li {
+    margin-top: 2rem;
+  }
+}
+
+.gallery img {
+  /* 
+    If the `<img>` is wrapped in a link,
+    it will inherit the link colour
+  */
+  border-width: 0.0625rem;
+  border-style: solid;
+}
+  </style>
+</head>
+<body>
+
+  <header id="the_steel_meadow">
+    <h1><a href=".">The Steel Meadow</a></h1>
+    <p>The official Simon Stålenhag website</p>
+  </header>
+
+  <nav id="nav_contextual" aria-label="Mechandise. More about me.">
+    <h2 class="a11y">About Simon Stålenhag</h2>
+    <ul>
+      <li>
+        <a href="http://www.redbubble.com/people/simonstalenhag">
+          Buy prints
+        </a>
+      </li>
+      <li>
+        <a href="https://www.amazon.com/s/ref=dp_byline_sr_book_1?ie=UTF8&amp;text=Simon+St%C3%A5lenhag&amp;search-alias=books&amp;field-author=Simon+St%C3%A5lenhag&amp;sort=relevancerank">
+          Buy books
+        </a>
+      </li>
+      <li>
+        <a href="https://twitter.com/simonstalenhag">
+          My Twitter
+        </a>
+      </li>
+      <li>
+        <a href="http://www.salomonssonagency.se/simon-stalenhag">
+          About me
+        </a>
+      </li>
+    </ul>
+    <p>
+      TV, film, and book rights:
+      <a href="mailto:info@salomonssonagency.com">
+        info@salomonssonagency.com
+      </a>
+    </p>
+  </nav>
+
+  <nav id="nav_site" aria-label="Site navigation">
+    <h2>Sections</h2>
+    <ul>
+      <li class="active">
+        <a href=".">
+          <span>Europa Mekano</span>
+          <small>(under development)</small>
+        </a>
+      </li>
+      <li>
+        <a href="labyrinth.html">
+          <span>The Labyrinth</span>
+          <small>(coming late 2020)</small>
+        </a>
+      </li>
+      <li>
+        <a href="es.html">
+          <span>The Electric State</span>
+          <small>(2017)</small>
+        </a>
+      </li>
+      <li>
+        <a href="tftf.html">
+          <span>Things from the flood</span>
+          <small>(2016)</small>
+        </a>
+      </li>
+      <li>
+        <a href="tftl.html">
+          <span>Tales from the loop</span>
+          <small>(2014)</small>
+        </a>
+      </li>
+      <li>
+        <a href="paleo.html">
+          <span>Paleoart</span>
+        </a>
+      </li>
+      <li>
+        <a href="other.html">
+          <span>Commissions, unpublished work, and solo pieces</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <article>
+      <header class="a11y">
+        <h2>Gallery: Europa Mekano</h2>
+      </header>
+      <p>Left-click the images for higher resolution.</p>
+      <ul class="gallery">
+        <li>
+          <a href="bilderbig/ark_overpass_big.jpg">
+            <figure>
+              <img alt width="1024" height="629" src="bilder/ark_overpass.jpg">
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_overpass_big.jpg">
+            <figure>
+              <img alt width="1024" height="340" src="bilder/ark_overpass_detalj.jpg">
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_overpass_big.jpg">
+            <figure>
+              <img alt width="1024" height="987" src="bilder/ark_overpass_detalj2.jpg">
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_overpass_big.jpg">
+            <figure>
+              <img alt width="1024" height="420" src="bilder/ark_overpass_detalj3.jpg">
+            </figure>
+          </a> 
+        </li>
+        <li>
+          <a href="bilderbig/ark_bird_big.jpg">
+            <figure>
+              <img alt width="1024" height="1024" src="bilder/ark_bird.jpg">
+            </figure>
+          </a> 
+        </li>
+        <li>
+          <a href="bilderbig/ark_bird_big.jpg">
+            <figure>
+              <img alt width="1024" height="678" src="bilder/ark_bird_detalj.jpg">
+            </figure>
+          </a> 
+        </li>
+        <li>
+          <a href="bilderbig/ark_bird_big.jpg">
+            <figure>
+              <img alt width="1024" height="612" src="bilder/ark_bird_detalj2.jpg">
+            </figure>
+          </a> 
+        </li>
+        <li>
+          <a href="bilderbig/ark_bird_big.jpg">
+            <figure>
+              <img alt width="1024" height="975" src="bilder/ark_bird_detalj3.jpg">
+            </figure>
+          </a> 
+        </li>
+        <li>
+          <a href="bilderbig/ark_pool_big.jpg">
+            <figure>
+              <img alt width="1024" height="945" src="bilder/ark_pool.jpg">
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_pool_big.jpg">
+            <figure>
+              <img alt width="1024" height="672" src="bilder/ark_pool_detalj.jpg">
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_pool_big.jpg">
+            <figure>
+              <img alt width="1024" height="435" src="bilder/ark_pool_detalj2.jpg">
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_pool_big.jpg">
+            <figure>
+              <img alt width="1024" height="673" src="bilder/ark_pool_detalj3.jpg">
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_search01_big.jpg">
+            <figure>
+              <img alt width="1024" height="538" src="bilder/ark_search01.jpg">
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_search01_big.jpg">
+            <figure>
+              <img alt width="1024" height="856" src="bilder/ark_search01_detalj.jpg">
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_search01_big.jpg">
+            <figure>
+              <img alt width="1024" height="252" src="bilder/ark_search01_detalj2.jpg">
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_search01_big.jpg">
+            <figure>
+              <img alt width="1024" height="951" src="bilder/ark_search01_detalj3.jpg">
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_mechanik_big.jpg">
+            <figure>
+              <img alt width="1024" height="898" src="bilder/ark_mechanik.jpg">
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_mechanik_big.jpg">
+            <figure>
+              <img alt width="1024" height="417" src="bilder/ark_mechanik_detalj.jpg">
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_mechanik_big.jpg">
+            <figure>
+              <img alt width="1024" height="417" src="bilder/ark_mechanik_detalj2.jpg">
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_mechanik_big.jpg">
+            <figure>
+              <img alt width="1024" height="367" src="bilder/ark_mechanik_detalj3.jpg">
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_euromek_big.jpg">
+            <figure>
+              <img alt width="1024" height="914" src="bilder/ark_euromek.jpg">
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_euromek_big.jpg">
+            <figure>
+              <img alt width="1024" height="1024" src="bilder/ark_euromek_detalj.jpg">
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_euromek_big.jpg">
+            <figure>
+              <img alt width="1024" height="419" src="bilder/ark_euromek_detalj2.jpg">
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_euromek_big.jpg">
+            <figure>
+              <img alt width="1024" height="795" src="bilder/ark_euromek_detalj3.jpg">
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_exit_big.jpg">
+            <figure>
+              <img alt width="1024" height="915" src="bilder/ark_exit.jpg">
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_exit_big.jpg">
+            <figure>
+              <img alt width="1024" height="594" src="bilder/ark_exit_detalj.jpg">
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_exit_big.jpg">
+            <figure>
+              <img alt width="1024" height="594" src="bilder/ark_exit_detalj2.jpg">
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_exit_big.jpg">
+            <figure>
+              <img alt width="1024" height="594" src="bilder/ark_exit_detalj3.jpg">
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_tess_big.jpg">
+            <figure>
+              <img alt width="1024" height="973" src="bilder/ark_tess.jpg">
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_tess_big.jpg">
+            <figure>
+              <img alt width="1024" height="521" src="bilder/ark_tess_detalj.jpg">
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_tess_big.jpg">
+            <figure>
+              <img alt width="1024" height="521" src="bilder/ark_tess_detalj2.jpg">
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_tess_big.jpg">
+            <figure>
+              <img alt width="1024" height="834" src="bilder/ark_tess_detalj3.jpg">
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_bryggan_big.jpg">
+            <figure>
+              <img alt width="1024" height="914" src="bilder/ark_bryggan.jpg">
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_bryggan_big.jpg">
+            <figure>
+              <img alt width="1024" height="457" src="bilder/ark_bryggan_detalj.jpg">
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_bryggan_big.jpg">
+            <figure>
+              <img alt width="1024" height="457" src="bilder/ark_bryggan_detalj2.jpg">
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_bryggan_big.jpg">
+            <figure>
+              <img alt width="1024" height="457" src="bilder/ark_bryggan_detalj3.jpg">
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_patrol_big.jpg">
+            <figure>
+              <img alt width="1024" height="914" src="bilder/ark_patrol.jpg">
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_patrol_big.jpg">
+            <figure>
+              <img alt width="1024" height="496" src="bilder/ark_patrol_detalj.jpg">
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_patrol_big.jpg">
+            <figure>
+              <img alt width="1024" height="927" src="bilder/ark_patrol_detalj2.jpg">
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_patrol_big.jpg">
+            <figure>
+              <img alt width="1024" height="286" src="bilder/ark_patrol_detalj3.jpg">
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_schiffer_big.jpg">
+            <figure>
+              <img alt width="1024" height="1024" src="bilder/ark_schiffer.jpg">
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_schiffer_big.jpg">
+            <figure>
+              <img alt width="1024" height="1024" src="bilder/ark_schiffer_detalj.jpg">
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_schiffer_big.jpg">
+            <figure>
+              <img alt width="1024" height="414" src="bilder/ark_schiffer_detalj2.jpg">
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_schiffer_big.jpg">
+            <figure>
+              <img alt width="1024" height="843" src="bilder/ark_schiffer_detalj3.jpg">
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_thule_big.jpg">
+            <figure>
+              <img alt width="1024" height="1024" src="bilder/ark_thule.jpg">
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_thule_big.jpg">
+            <figure>
+              <img alt width="1024" height="983" src="bilder/ark_thule_detalj.jpg">
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_thule_big.jpg">
+            <figure>
+              <img alt width="1024" height="511" src="bilder/ark_thule_detalj2.jpg">
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_thule_big.jpg">
+            <figure>
+              <img alt width="1024" height="799" src="bilder/ark_thule_detalj3.jpg">
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_falt_big.jpg">
+            <figure>
+              <img alt width="1024" height="512" src="bilder/ark_falt.jpg">
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_falt_big.jpg">
+            <figure>
+              <img alt width="1024" height="220" src="bilder/ark_falt_detalj.jpg">
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_falt_big.jpg">
+            <figure>
+              <img alt width="1024" height="321" src="bilder/ark_falt_detalj2.jpg">
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_falt_big.jpg">
+            <figure>
+              <img alt width="1024" height="229" src="bilder/ark_falt_detalj3.jpg">
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_hallsta_big.jpg">
+            <figure>
+              <img alt width="1024" height="512" src="bilder/ark_hallsta.jpg">
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_hallsta_big.jpg">
+            <figure>
+              <img alt width="1024" height="512" src="bilder/ark_hallsta_detalj.jpg">
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_hallsta_big.jpg">
+            <figure>
+              <img alt width="1024" height="658" src="bilder/ark_hallsta_detalj2.jpg">
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_hallsta_big.jpg">
+            <figure>
+              <img alt width="1024" height="512" src="bilder/ark_hallsta_detalj3.jpg">
+            </figure>
+          </a>
+        </li>
+      </ul>
+    </article>
+  </main>
+
+  <footer>
+    <a href="#the_steel_meadow">Back to top
+
+    </a>
+  </footer>
+
+</body>
+</html>
+ 
