@@ -16,5 +16,6 @@ wget
 Version | Requests | Transferred | Comments
 --- | --- | --- | ---
 [original](00-original/index.html) | 62 | 8,042KB | baseline, no gzip.
+[compressed](01-compressed-jpgs/index.html) | 62 | 6,582KB ✅ *(-1,460KB)* | TinyJPG applied to existing JPGs
 
 All results include a 342B 404 for the `favicon.ico` request that every website should honour.
