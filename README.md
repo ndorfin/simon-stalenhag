@@ -44,4 +44,5 @@ Version | Requests | Transferred | WebPageTest | Comments
 
 Version | Requests | Transferred | WebPageTest | Comments
 --- | --- | --- | --- | ---
-[02-html-updated](02-html-updated/index.html) | 8 ✅ *(-52)* | 814KB ✅ *(-21KB)* | [02](https://webpagetest.org/result/200929_DiQR_741d747847dd6d124496081b16446136/) | 
+[00-original](00-original/index.html) | 60 | 7,819KB | [00](https://webpagetest.org/result/200929_Di2B_202bdecf2063c4b6c9a8ab39c9d2753b/) | Baseline
+[02-html-updated](02-html-updated/index.html) | 8 ✅ *(-52)* | 814KB ✅ *(-7,005KB)* | [02](https://webpagetest.org/result/200929_DiQR_741d747847dd6d124496081b16446136/) | Can we do better?
