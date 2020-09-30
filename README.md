@@ -61,12 +61,14 @@ Version | Requests | Transferred | WebPageTest | Comments
 [04-webp](04-webp/index.html) | 59 | 5,306KB ✅ *(-1,074KB)* | [04](https://webpagetest.org/result/200930_Di9Q_7a20d59d5f5aa6397e5cc3c0aec4c922/) | WebP & `picture` element sources
 [05-avif](05-avif/index.html) | 59 | 2,993KB ✅ *(-2,313KB)* | [05](https://webpagetest.org/result/200930_DiRR_8c363b8bc1c530bbc37b3679036ec477/) | AVIF added to `picture` element sources
 
-[View a comparison of all the WebPageTest runs](https://webpagetest.org/video/compare.php?tests=200930_DiRR_8c363b8bc1c530bbc37b3679036ec477%2C200930_Di9Q_7a20d59d5f5aa6397e5cc3c0aec4c922%2C200929_DiRJ_4b09841208346f8612cbf130ebc9dc9a%2C200929_DiTA_18be7082d9ad2708ba3e6302d3e07d62%2C200929_Di2B_202bdecf2063c4b6c9a8ab39c9d2753b&thumbSize=150&ival=100&end=visual)
+[View a comparison of all the desktop-sized WebPageTest runs](https://webpagetest.org/video/compare.php?tests=200930_DiRR_8c363b8bc1c530bbc37b3679036ec477%2C200930_Di9Q_7a20d59d5f5aa6397e5cc3c0aec4c922%2C200929_DiRJ_4b09841208346f8612cbf130ebc9dc9a%2C200929_DiTA_18be7082d9ad2708ba3e6302d3e07d62%2C200929_Di2B_202bdecf2063c4b6c9a8ab39c9d2753b&thumbSize=150&ival=100&end=visual)
 
-### With Lazy-loading of the offscreen images
+### With Lazy-loading of the offscreen images on a mobile
 
 Version | Requests | Transferred | WebPageTest | Comments
 --- | --- | --- | --- | ---
-[00-original](00-original/index.html) | 60 | 7,819KB | [00](https://webpagetest.org/result/200929_Di2B_202bdecf2063c4b6c9a8ab39c9d2753b/) | Baseline
-[02-html-updated](02-html-updated/index.html) | 8 ✅ *(-52)* | 814KB ✅ *(-7,005KB)* | [02](https://webpagetest.org/result/200929_DiQR_741d747847dd6d124496081b16446136/) | Can we do better?
-[06-mobile-optimised](06-mobile-optimised/index.html) | 8 ✅ *(-52)* | 814KB ✅ *(-7,005KB)* | [06]() | Yes we can.
+[00-original](00-original/index.html) | 60 | 7,819KB | [00](https://webpagetest.org/result/200930_DiX6_75eef9a4a9788b4f33303e2b49ac3a8b/) | Baseline
+[02-html-updated](02-html-updated/index.html) | 16 ✅ *(-44)* | 1,913KB ✅ *(-5,906KB)* | [02](https://webpagetest.org/result/200930_DiQE_2fe78ee998061370d09e49ac318ef993/) | Can we do better?
+[06-mobile-optimised](06-mobile-optimised/index.html) | 17 ❌ *(+1)* | 287KB ✅ *(-1,626KB)* | [06](https://webpagetest.org/result/200930_DiHN_ca70282e5c557f96f0c842c59efb5c45/) | Yes we can.
+
+[Compare the various WebPageTests done on a Moto G6](https://webpagetest.org/video/compare.php?tests=200930_DiX6_75eef9a4a9788b4f33303e2b49ac3a8b,200930_DiQE_2fe78ee998061370d09e49ac318ef993,200930_DiHN_ca70282e5c557f96f0c842c59efb5c45)
