@@ -55,6 +55,9 @@ Version | Requests | Transferred | WebPageTest | Comments
 [01-compressed-jpgs](01-compressed-jpgs/index.html) | 60 | 6,394KB ✅ *(-1,425KB)* | [01](https://webpagetest.org/result/200929_DiTA_18be7082d9ad2708ba3e6302d3e07d62/) | TinyJPG is amazing.
 [03-no-lazy-loading](03-no-lazy-loading/index.html) | 59 ✅ *(-1)* | 6,380KB ✅ *(-14KB)* | [03](https://webpagetest.org/result/200929_DiRJ_4b09841208346f8612cbf130ebc9dc9a/) | PNGs < GIFs. Inlined CSS.
 [04-webp](04-webp/index.html) | 59 | 5,306KB ✅ *(-1,074KB)* | [04](https://webpagetest.org/result/200930_Di9Q_7a20d59d5f5aa6397e5cc3c0aec4c922/) | WebP & `picture` element sources
+[05-avif](05-avif/index.html) | 59 | 2,993KB ✅ *(-2,313KB)* | [05](https://webpagetest.org/result/200930_DiRR_8c363b8bc1c530bbc37b3679036ec477/) | AVIF added to `picture` element sources
+
+[View a comparison of all the WebPageTest runs](https://webpagetest.org/video/compare.php?tests=200930_DiRR_8c363b8bc1c530bbc37b3679036ec477%2C200930_Di9Q_7a20d59d5f5aa6397e5cc3c0aec4c922%2C200929_DiRJ_4b09841208346f8612cbf130ebc9dc9a%2C200929_DiTA_18be7082d9ad2708ba3e6302d3e07d62%2C200929_Di2B_202bdecf2063c4b6c9a8ab39c9d2753b&thumbSize=150&ival=100&end=visual)
 
 ### With Lazy-loading of the offscreen images
 
