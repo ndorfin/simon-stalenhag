@@ -34,6 +34,10 @@ Then I gradually made the following changes:
    - Progressively-enhance the HTML by using the `<picture>` element, and adding `webp` as one of the `<source>`s.
 1. [`05-avif`](05-avif/index.html): 
    - Uses AVIF in supporting browsers. I batch converted each of the JPGs into AVIFs with a 70% quality setting. 70% seemed to be the sweet spot between size and relative quality. I'm not sure why, but the gamma or colour settings for the conversion makes the images noticeably darker. I've tried manually setting the gamma, or reading from the ICC, but no luck. It could be browser-specific. Also, it's really difficult to compress images that have a deliberate graininess to them.
+1. [`06-mobile-optimised`](06-mobile-optimised/index.html): 
+   - Add lazy loading back
+   - Halve the size of all images and use them as the default image for mobile-sized devices. See the [`batch_half_size.sh`](scripts/batch_half_size.sh) in the `scripts` folder
+   - Serve the 1024px-wide images to any device with a screen-width greater than 584px.
 
 ## Converting to AVIF
 
@@ -65,4 +69,4 @@ Version | Requests | Transferred | WebPageTest | Comments
 --- | --- | --- | --- | ---
 [00-original](00-original/index.html) | 60 | 7,819KB | [00](https://webpagetest.org/result/200929_Di2B_202bdecf2063c4b6c9a8ab39c9d2753b/) | Baseline
 [02-html-updated](02-html-updated/index.html) | 8 ✅ *(-52)* | 814KB ✅ *(-7,005KB)* | [02](https://webpagetest.org/result/200929_DiQR_741d747847dd6d124496081b16446136/) | Can we do better?
-
+[06-mobile-optimised](06-mobile-optimised/index.html) | 8 ✅ *(-52)* | 814KB ✅ *(-7,005KB)* | [06]() | Yes we can.

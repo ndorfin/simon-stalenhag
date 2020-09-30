@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>www.simonstalenhag.se</title>
+  <style>
+/* Element defaults */
+html {
+  background-color: #efefef;
+  background-image: url('img/bg_wallpaper.png');
+  color: #666;
+  font-family: Helvetica, "Trebuchet MS", Verdana, Arial;
+  font-size: 100%;
+}
+
+body {
+  max-width: 64rem;
+  margin: 0 auto;
+  border-style: solid;
+  border-color: #e290a7;
+  border-width: 0 0.125rem;
+  background-color: #efefef;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  body {
+    padding: 2rem;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+a:link,
+a:visited {
+  color: #7d7d7d;
+}
+
+a:hover {
+  color: #e290a7;
+}
+
+a:active {
+  color: #f93;
+}
+
+nav > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Site header */
+body > header > h1 {
+  position: relative;
+  height: 0;
+  padding-top: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: calc(582px + 64px + 4px)) {
+  body > header > h1 {
+    padding-top: 0;
+    width: 582px;
+    height: 116px;
+  }
+}
+
+body > header > h1 > a {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  max-width: 582px;
+  max-height: 116px;
+  background-image: url('img/logo_the_steel_meadow.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* 
+    Hide the text for the Logo by using a negative indent,
+    and then hiding any overflow.
+  */
+  text-indent: -999rem;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+body > header > p {
+  margin-top: 1em;
+  font-size: 1.125rem;
+  font-style: italic;
+  color: #a6a6a6;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Navigation */
+body > nav {
+  font-size: 1.125rem;
+}
+
+body > nav .active span {
+  font-weight: 700;
+}
+
+body > nav small {
+  font-size: inherit;
+}
+
+#nav_contextual li a,
+body > nav a span {
+  text-transform: uppercase;
+}
+
+#nav_site {
+  margin-top: 2rem;
+}
+
+#nav_site h2 {
+  color: #a6a6a6;
+  font-size: 1.125rem;
+  font-weight: normal;
+}
+
+#nav_site h2::after {
+  content: ":";
+}
+
+/* Article */
+article {
+  margin-top: 2rem;
+}
+
+/* Footer */
+body > footer {
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* Utility classes */
+.a11y {
+  /* 
+    Hide the element from sighted users,
+    but retain its screen-reader and search engine support
+  */
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* Component classes */
+.gallery {
+  /* 
+    A list element such as a `<ul>` or `<ol>` that contains
+    many images, one per list-item
+  */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.gallery li + li {
+  margin-top: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .gallery li + li {
+    margin-top: 2rem;
+  }
+}
+
+.gallery img {
+  /* 
+    If the `<img loading="lazy">` is wrapped in a link,
+    it will inherit the link colour
+  */
+  border-width: 0.0625rem;
+  border-style: solid;
+  width: 100%;
+}
+  </style>
+</head>
+<body>
+
+  <header id="the_steel_meadow">
+    <h1><a href=".">The Steel Meadow</a></h1>
+    <p>The official Simon Stålenhag website</p>
+  </header>
+
+  <nav id="nav_contextual" aria-label="Mechandise. More about me.">
+    <h2 class="a11y">About Simon Stålenhag</h2>
+    <ul>
+      <li>
+        <a href="http://www.redbubble.com/people/simonstalenhag">
+          Buy prints
+        </a>
+      </li>
+      <li>
+        <a href="https://www.amazon.com/s/ref=dp_byline_sr_book_1?ie=UTF8&amp;text=Simon+St%C3%A5lenhag&amp;search-alias=books&amp;field-author=Simon+St%C3%A5lenhag&amp;sort=relevancerank">
+          Buy books
+        </a>
+      </li>
+      <li>
+        <a href="https://twitter.com/simonstalenhag">
+          My Twitter
+        </a>
+      </li>
+      <li>
+        <a href="http://www.salomonssonagency.se/simon-stalenhag">
+          About me
+        </a>
+      </li>
+    </ul>
+    <p>
+      TV, film, and book rights:
+      <a href="mailto:info@salomonssonagency.com">
+        info@salomonssonagency.com
+      </a>
+    </p>
+  </nav>
+
+  <nav id="nav_site" aria-label="Site navigation">
+    <h2>Sections</h2>
+    <ul>
+      <li class="active">
+        <a href=".">
+          <span>Europa Mekano</span>
+          <small>(under development)</small>
+        </a>
+      </li>
+      <li>
+        <a href="labyrinth.html">
+          <span>The Labyrinth</span>
+          <small>(coming late 2020)</small>
+        </a>
+      </li>
+      <li>
+        <a href="es.html">
+          <span>The Electric State</span>
+          <small>(2017)</small>
+        </a>
+      </li>
+      <li>
+        <a href="tftf.html">
+          <span>Things from the flood</span>
+          <small>(2016)</small>
+        </a>
+      </li>
+      <li>
+        <a href="tftl.html">
+          <span>Tales from the loop</span>
+          <small>(2014)</small>
+        </a>
+      </li>
+      <li>
+        <a href="paleo.html">
+          <span>Paleoart</span>
+        </a>
+      </li>
+      <li>
+        <a href="other.html">
+          <span>Commissions, unpublished work, and solo pieces</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <article>
+      <header class="a11y">
+        <h2>Gallery: Europa Mekano</h2>
+      </header>
+      <p>Left-click the images for higher resolution.</p>
+      <ul class="gallery">
+        <li>
+          <a href="bilderbig/ark_overpass_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_overpass.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_overpass.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_overpass.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_overpass.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_overpass.webp">
+                <img alt width="512" height="315" src="bildersmall/jpg/ark_overpass.jpg">
+              </picture>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_overpass_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_overpass_detalj.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_overpass_detalj.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_overpass_detalj.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_overpass_detalj.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_overpass_detalj.webp">
+                <img loading="lazy" alt width="512" height="170" src="bildersmall/jpg/ark_overpass_detalj.jpg">
+              </picture>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_overpass_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_overpass_detalj2.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_overpass_detalj2.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_overpass_detalj2.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_overpass_detalj2.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_overpass_detalj2.webp">
+                <img loading="lazy" alt width="512" height="494" src="bildersmall/jpg/ark_overpass_detalj2.jpg">
+              </picture>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_overpass_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_overpass_detalj3.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_overpass_detalj3.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_overpass_detalj3.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_overpass_detalj3.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_overpass_detalj3.webp">
+                <img loading="lazy" alt width="512" height="210" src="bildersmall/jpg/ark_overpass_detalj3.jpg">
+              </picture>
+            </figure>
+          </a> 
+        </li>
+        <li>
+          <a href="bilderbig/ark_bird_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_bird.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_bird.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_bird.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_bird.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_bird.webp">
+                <img loading="lazy" alt width="512" height="256" src="bildersmall/jpg/ark_bird.jpg">
+              </picture>
+            </figure>
+          </a> 
+        </li>
+        <li>
+          <a href="bilderbig/ark_bird_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_bird_detalj.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_bird_detalj.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_bird_detalj.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_bird_detalj.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_bird_detalj.webp">
+                <img loading="lazy" alt width="512" height="339" src="bildersmall/jpg/ark_bird_detalj.jpg">
+              </picture>
+            </figure>
+          </a> 
+        </li>
+        <li>
+          <a href="bilderbig/ark_bird_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_bird_detalj2.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_bird_detalj2.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_bird_detalj2.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_bird_detalj2.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_bird_detalj2.webp">
+                <img loading="lazy" alt width="512" height="306" src="bildersmall/jpg/ark_bird_detalj2.jpg">
+              </picture>
+            </figure>
+          </a> 
+        </li>
+        <li>
+          <a href="bilderbig/ark_bird_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_bird_detalj3.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_bird_detalj3.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_bird_detalj3.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_bird_detalj3.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_bird_detalj3.webp">
+                <img loading="lazy" alt width="512" height="488" src="bildersmall/jpg/ark_bird_detalj3.jpg">
+              </picture>
+            </figure>
+          </a> 
+        </li>
+        <li>
+          <a href="bilderbig/ark_pool_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_pool.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_pool.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_pool.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_pool.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_pool.webp">
+                <img loading="lazy" alt width="512" height="473" src="bildersmall/jpg/ark_pool.jpg">
+              </picture>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_pool_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_pool_detalj.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_pool_detalj.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_pool_detalj.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_pool_detalj.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_pool_detalj.webp">
+                <img loading="lazy" alt width="512" height="336" src="bildersmall/jpg/ark_pool_detalj.jpg">
+              </picture>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_pool_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_pool_detalj2.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_pool_detalj2.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_pool_detalj2.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_pool_detalj2.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_pool_detalj2.webp">
+                <img loading="lazy" alt width="512" height="218" src="bildersmall/jpg/ark_pool_detalj2.jpg">
+              </picture>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_pool_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_pool_detalj3.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_pool_detalj3.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_pool_detalj3.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_pool_detalj3.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_pool_detalj3.webp">
+                <img loading="lazy" alt width="512" height="337" src="bildersmall/jpg/ark_pool_detalj3.jpg">
+              </picture>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_search01_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_search01.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_search01.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_search01.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_search01.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_search01.webp">
+                <img loading="lazy" alt width="512" height="269" src="bildersmall/jpg/ark_search01.jpg">
+              </picture>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_search01_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_search01_detalj.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_search01_detalj.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_search01_detalj.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_search01_detalj.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_search01_detalj.webp">
+                <img loading="lazy" alt width="512" height="428" src="bildersmall/jpg/ark_search01_detalj.jpg">
+              </picture>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_search01_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_search01_detalj2.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_search01_detalj2.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_search01_detalj2.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_search01_detalj2.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_search01_detalj2.webp">
+                <img loading="lazy" alt width="512" height="126" src="bildersmall/jpg/ark_search01_detalj2.jpg">
+              </picture>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_search01_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_search01_detalj3.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_search01_detalj3.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_search01_detalj3.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_search01_detalj3.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_search01_detalj3.webp">
+                <img loading="lazy" alt width="512" height="476" src="bildersmall/jpg/ark_search01_detalj3.jpg">
+              </picture>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_mechanik_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_mechanik.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_mechanik.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_mechanik.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_mechanik.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_mechanik.webp">
+                <img loading="lazy" alt width="512" height="449" src="bildersmall/jpg/ark_mechanik.jpg">
+              </picture>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_mechanik_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_mechanik_detalj.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_mechanik_detalj.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_mechanik_detalj.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_mechanik_detalj.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_mechanik_detalj.webp">
+                <img loading="lazy" alt width="512" height="209" src="bildersmall/jpg/ark_mechanik_detalj.jpg">
+              </picture>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_mechanik_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_mechanik_detalj2.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_mechanik_detalj2.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_mechanik_detalj2.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_mechanik_detalj2.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_mechanik_detalj2.webp">
+                <img loading="lazy" alt width="512" height="209" src="bildersmall/jpg/ark_mechanik_detalj2.jpg">
+              </picture>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_mechanik_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_mechanik_detalj3.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_mechanik_detalj3.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_mechanik_detalj3.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_mechanik_detalj3.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_mechanik_detalj3.webp">
+                <img loading="lazy" alt width="512" height="184" src="bildersmall/jpg/ark_mechanik_detalj3.jpg">
+              </picture>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_euromek_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_euromek.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_euromek.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_euromek.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_euromek.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_euromek.webp">
+                <img loading="lazy" alt width="512" height="497" src="bildersmall/jpg/ark_euromek.jpg">
+              </picture>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_euromek_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_euromek_detalj.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_euromek_detalj.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_euromek_detalj.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_euromek_detalj.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_euromek_detalj.webp">
+                <img loading="lazy" alt width="512" height="256" src="bildersmall/jpg/ark_euromek_detalj.jpg">
+              </picture>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_euromek_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_euromek_detalj2.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_euromek_detalj2.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_euromek_detalj2.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_euromek_detalj2.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_euromek_detalj2.webp">
+                <img loading="lazy" alt width="512" height="210" src="bildersmall/jpg/ark_euromek_detalj2.jpg">
+              </picture>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_euromek_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_euromek_detalj3.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_euromek_detalj3.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_euromek_detalj3.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_euromek_detalj3.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_euromek_detalj3.webp">
+                <img loading="lazy" alt width="512" height="398" src="bildersmall/jpg/ark_euromek_detalj3.jpg">
+              </picture>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_exit_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_exit.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_exit.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_exit.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_exit.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_exit.webp">
+                <img loading="lazy" alt width="512" height="458" src="bildersmall/jpg/ark_exit.jpg">
+              </picture>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_exit_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_exit_detalj.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_exit_detalj.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_exit_detalj.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_exit_detalj.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_exit_detalj.webp">
+                <img loading="lazy" alt width="512" height="297" src="bildersmall/jpg/ark_exit_detalj.jpg">
+              </picture>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_exit_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_exit_detalj2.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_exit_detalj2.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_exit_detalj2.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_exit_detalj2.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_exit_detalj2.webp">
+                <img loading="lazy" alt width="512" height="297" src="bildersmall/jpg/ark_exit_detalj2.jpg">
+              </picture>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_exit_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_exit_detalj3.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_exit_detalj3.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_exit_detalj3.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_exit_detalj3.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_exit_detalj3.webp">
+                <img loading="lazy" alt width="512" height="297" src="bildersmall/jpg/ark_exit_detalj3.jpg">
+              </picture>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_tess_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_tess.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_tess.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_tess.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_tess.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_tess.webp">
+                <img loading="lazy" alt width="512" height="469" src="bildersmall/jpg/ark_tess.jpg">
+              </picture>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_tess_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_tess_detalj.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_tess_detalj.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_tess_detalj.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_tess_detalj.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_tess_detalj.webp">
+                <img loading="lazy" alt width="512" height="261" src="bildersmall/jpg/ark_tess_detalj.jpg">
+              </picture>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_tess_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_tess_detalj2.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_tess_detalj2.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_tess_detalj2.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_tess_detalj2.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_tess_detalj2.webp">
+                <img loading="lazy" alt width="512" height="261" src="bildersmall/jpg/ark_tess_detalj2.jpg">
+              </picture>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_tess_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_tess_detalj3.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_tess_detalj3.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_tess_detalj3.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_tess_detalj3.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_tess_detalj3.webp">
+                <img loading="lazy" alt width="512" height="417" src="bildersmall/jpg/ark_tess_detalj3.jpg">
+              </picture>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_bryggan_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_bryggan.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_bryggan.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_bryggan.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_bryggan.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_bryggan.webp">
+                <img loading="lazy" alt width="512" height="457" src="bildersmall/jpg/ark_bryggan.jpg">
+              </picture>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_bryggan_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_bryggan_detalj.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_bryggan_detalj.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_bryggan_detalj.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_bryggan_detalj.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_bryggan_detalj.webp">
+                <img loading="lazy" alt width="512" height="229" src="bildersmall/jpg/ark_bryggan_detalj.jpg">
+              </picture>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_bryggan_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_bryggan_detalj2.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_bryggan_detalj2.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_bryggan_detalj2.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_bryggan_detalj2.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_bryggan_detalj2.webp">
+                <img loading="lazy" alt width="512" height="229" src="bildersmall/jpg/ark_bryggan_detalj2.jpg">
+              </picture>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_bryggan_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_bryggan_detalj3.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_bryggan_detalj3.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_bryggan_detalj3.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_bryggan_detalj3.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_bryggan_detalj3.webp">
+                <img loading="lazy" alt width="512" height="229" src="bildersmall/jpg/ark_bryggan_detalj3.jpg">
+              </picture>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_patrol_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_patrol.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_patrol.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_patrol.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_patrol.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_patrol.webp">
+                <img loading="lazy" alt width="512" height="457" src="bildersmall/jpg/ark_patrol.jpg">
+              </picture>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_patrol_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_patrol_detalj.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_patrol_detalj.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_patrol_detalj.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_patrol_detalj.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_patrol_detalj.webp">
+                <img loading="lazy" alt width="512" height="248" src="bildersmall/jpg/ark_patrol_detalj.jpg">
+              </picture>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_patrol_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_patrol_detalj2.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_patrol_detalj2.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_patrol_detalj2.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_patrol_detalj2.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_patrol_detalj2.webp">
+                <img loading="lazy" alt width="512" height="464" src="bildersmall/jpg/ark_patrol_detalj2.jpg">
+              </picture>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_patrol_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_patrol_detalj3.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_patrol_detalj3.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_patrol_detalj3.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_patrol_detalj3.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_patrol_detalj3.webp">
+                <img loading="lazy" alt width="512" height="143" src="bildersmall/jpg/ark_patrol_detalj3.jpg">
+              </picture>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_schiffer_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_schiffer.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_schiffer.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_schiffer.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_schiffer.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_schiffer.webp">
+                <img loading="lazy" alt width="512" height="512" src="bildersmall/jpg/ark_schiffer.jpg">
+              </picture>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_schiffer_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_schiffer_detalj.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_schiffer_detalj.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_schiffer_detalj.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_schiffer_detalj.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_schiffer_detalj.webp">
+                <img loading="lazy" alt width="512" height="512" src="bildersmall/jpg/ark_schiffer_detalj.jpg">
+              </picture>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_schiffer_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_schiffer_detalj2.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_schiffer_detalj2.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_schiffer_detalj2.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_schiffer_detalj2.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_schiffer_detalj2.webp">
+                <img loading="lazy" alt width="512" height="207" src="bildersmall/jpg/ark_schiffer_detalj2.jpg">
+              </picture>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_schiffer_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_schiffer_detalj3.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_schiffer_detalj3.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_schiffer_detalj3.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_schiffer_detalj3.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_schiffer_detalj3.webp">
+                <img loading="lazy" alt width="512" height="422" src="bildersmall/jpg/ark_schiffer_detalj3.jpg">
+              </picture>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_thule_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_thule.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_thule.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_thule.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_thule.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_thule.webp">
+                <img loading="lazy" alt width="512" height="512" src="bildersmall/jpg/ark_thule.jpg">
+              </picture>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_thule_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_thule_detalj.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_thule_detalj.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_thule_detalj.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_thule_detalj.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_thule_detalj.webp">
+                <img loading="lazy" alt width="512" height="492" src="bildersmall/jpg/ark_thule_detalj.jpg">
+              </picture>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_thule_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_thule_detalj2.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_thule_detalj2.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_thule_detalj2.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_thule_detalj2.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_thule_detalj2.webp">
+                <img loading="lazy" alt width="512" height="256" src="bildersmall/jpg/ark_thule_detalj2.jpg">
+              </picture>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_thule_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_thule_detalj3.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_thule_detalj3.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_thule_detalj3.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_thule_detalj3.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_thule_detalj3.webp">
+                <img loading="lazy" alt width="512" height="400" src="bildersmall/jpg/ark_thule_detalj3.jpg">
+              </picture>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_falt_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_falt.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_falt.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_falt.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_falt.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_falt.webp">
+                <img loading="lazy" alt width="512" height="256" src="bildersmall/jpg/ark_falt.jpg">
+              </picture>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_falt_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_falt_detalj.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_falt_detalj.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_falt_detalj.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_falt_detalj.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_falt_detalj.webp">
+                <img loading="lazy" alt width="512" height="110" src="bildersmall/jpg/ark_falt_detalj.jpg">
+              </picture>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_falt_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_falt_detalj2.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_falt_detalj2.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_falt_detalj2.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_falt_detalj2.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_falt_detalj2.webp">
+                <img loading="lazy" alt width="512" height="161" src="bildersmall/jpg/ark_falt_detalj2.jpg">
+              </picture>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_falt_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_falt_detalj3.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_falt_detalj3.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_falt_detalj3.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_falt_detalj3.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_falt_detalj3.webp">
+                <img loading="lazy" alt width="512" height="115" src="bildersmall/jpg/ark_falt_detalj3.jpg">
+              </picture>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_hallsta_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_hallsta.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_hallsta.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_hallsta.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_hallsta.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_hallsta.webp">
+                <img loading="lazy" alt width="512" height="256" src="bildersmall/jpg/ark_hallsta.jpg">
+              </picture>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_hallsta_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_hallsta_detalj.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_hallsta_detalj.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_hallsta_detalj.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_hallsta_detalj.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_hallsta_detalj.webp">
+                <img loading="lazy" alt width="512" height="256" src="bildersmall/jpg/ark_hallsta_detalj.jpg">
+              </picture>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_hallsta_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_hallsta_detalj2.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_hallsta_detalj2.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_hallsta_detalj2.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_hallsta_detalj2.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_hallsta_detalj2.webp">
+                <img loading="lazy" alt width="512" height="329" src="bildersmall/jpg/ark_hallsta_detalj2.jpg">
+              </picture>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="bilderbig/ark_hallsta_big.jpg">
+            <figure>
+              <picture>
+                <source media="(min-width: 584px)" type="image/avif" srcset="bilder/avif/ark_hallsta_detalj3.avif">
+                <source media="(min-width: 584px)" type="image/webp" srcset="bilder/webp/ark_hallsta_detalj3.webp">
+                <source media="(min-width: 584px)" type="image/jpeg" srcset="bilder/jpg/ark_hallsta_detalj3.jpg">
+                <source type="image/avif" srcset="bildersmall/avif/ark_hallsta_detalj3.avif">
+                <source type="image/webp" srcset="bildersmall/webp/ark_hallsta_detalj3.webp">
+                <img loading="lazy" alt width="512" height="256" src="bildersmall/jpg/ark_hallsta_detalj3.jpg">
+              </picture>
+            </figure>
+          </a>
+        </li>
+      </ul>
+    </article>
+  </main>
+
+  <footer>
+    <p><a href="#the_steel_meadow">Back to top</a></p>
+  </footer>
+
+</body>
+</html>
+ 
